@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_popup_menu_bg"
+    android:minWidth="108dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/btn_edit"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:drawableStart="@mipmap/btn_detail_edit"
+        android:drawableLeft="@mipmap/btn_detail_edit"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:text="编辑"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:drawableStart="@mipmap/btn_growth_detail_del"
+        android:drawableLeft="@mipmap/btn_growth_detail_del"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:text="删除"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+</LinearLayout>

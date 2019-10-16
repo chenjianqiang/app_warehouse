@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_sub_title_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#aaa"
+        android:padding="3dp"
+        android:text="我是小标题"
+        android:textColor="#000000" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_icon_list_item"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_launcher_background" />
+        <TextView
+            android:id="@+id/tv_app_name_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@id/iv_icon_list_item"
+            android:text="应用名称"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/tv_app_size_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_app_name_list_item"
+            android:layout_toRightOf="@id/iv_icon_list_item"
+            android:text="应用大小:xxxxM" />
+        <TextView
+            android:id="@+id/tv_app_location_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="应用位置" />
+    </RelativeLayout>
+</LinearLayout>

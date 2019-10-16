@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:src="@mipmap/cinema_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="sdfsdfsdf"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toRightOf="@+id/image_view"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="《驯龙高手》由梦工厂动画制作，于2010年3月26日上映。其故事内容改编自葛蕾熙达·柯维尔于2003年所作的同名童书《如何驯服你的龙》。负责担任电影的配音演员有杰伊·巴鲁切尔、亚美莉卡·费雷拉、乔纳·希尔、克里斯托夫·梅兹-普莱瑟、克雷格·费格森以及杰拉德·巴特勒等人。"
+                android:textSize="14dp"
+                app:layout_constraintLeft_toLeftOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary" />
+</LinearLayout>
+

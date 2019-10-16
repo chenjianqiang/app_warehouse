@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <!--主色-->
+    <color name="green_main">#3FB33D</color>
+    <color name="green_main_tran">#903FB33D</color>
+    <color name="green_main_transparent">#203FB33D</color>
+    <color name="black_main">#333333</color>
+    <color name="gray_main">#666666</color>
+    <color name="gray_main_lite">#999999</color>
+
+    <color name="grey">#ebebeb</color>
+    <color name="black">#000000</color>
+    <color name="darkgrey">#C0C0C0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+
+
+</resources>

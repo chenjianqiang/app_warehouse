@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/back_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="界面标题"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/publish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:text="发布"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorAccent"
+            android:layerType="software"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yf.warehouse.viewhelper.EditTextWithDel
+                android:id="@+id/et_code"
+                style="@style/et_change_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="验证码"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/bt_code"
+                style="@style/bt_roundrec"
+                android:text="验证码" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_dialog"
+                style="@style/bt_roundrec"
+                android:text="确认Dialog" />
+
+            <Button
+                android:id="@+id/bt_popup"
+                style="@style/bt_roundrec"
+                android:text="Popup弹框" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/iv_add_manager_ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/rect_green_dottedline"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/add_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="新增元素"
+                android:textColor="#3FB33D"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <com.yf.warehouse.viewhelper.ExpandableTextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:lineSpacingExtra="7dp"
+            android:text="@string/expandabletextview_content"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            app:etv_InitState="expand"
+            app:etv_MaxLinesOnShrink="2"
+            app:etv_ToExpandHint="@string/shop_btn_look_more" />
+        <!--app:etv_InitState="shrink"-->
+
+    </LinearLayout>
+</ScrollView>
