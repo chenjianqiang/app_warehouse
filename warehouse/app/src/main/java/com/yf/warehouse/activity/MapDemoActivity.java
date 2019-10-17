@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 /**
- * @author cjq
+ * @author cjq on 2019/10/16
+ * <地图应用>
+ * 掌握通用如何调用第三方应用界面的方法
  */
 public class MapDemoActivity extends Activity {
     @Override

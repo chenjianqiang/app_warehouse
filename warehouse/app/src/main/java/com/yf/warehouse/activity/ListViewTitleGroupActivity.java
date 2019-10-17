@@ -87,6 +87,16 @@ public class ListViewTitleGroupActivity extends Activity implements View.OnClick
                 }
             }
         });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String packageName = adapter.getItem(position).packageName;
+                Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                Uri uri = Uri.fromParts("package", packageName, null);
+                intent.setData(uri);
+                startActivity(intent);
+            }
+        });
     }
 
 
@@ -145,7 +155,7 @@ public class ListViewTitleGroupActivity extends Activity implements View.OnClick
          * 根据position 返回数据Bean
          */
         @Override
-        public Object getItem(int position) {
+        public AppBean getItem(int position) {
             // 根据position 获得对应的数据Bean
             AppBean appInfo;//= allAppInfo.get(position);
             if (position < userAppList.size()) {
